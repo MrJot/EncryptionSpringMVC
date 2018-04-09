@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Encryption page</title>
+<style>
+body{
+color:black;
+background-color: white;
+font-family: Arial;
+font-size: 18px;
+}
+
+p{
+color: black;
+background-color: white;
+font-family: Arial;
+font-size: 12px;
+}
+
+
+</style>
+<body>
+
+    <div layout:fragment="content">
+    <div th:include="menuFragment" ></div>
+    	<br/><br/>
+	   			Encryption alghoritm
+	   			<p>
+	   			<input type="radio" name="Casear" value="CAS"> Casear
+	   			<input type="radio" name="Casear" value="VIG"> Vigenere<br>
+				</p>
+					<table>
+						<tr><td>Password:</td><td><input type="text" name="schoolClassStartYear" /></td></tr>
+					</table><br/><BR/>
+		
+	   			<p>
+	   			<input type="radio" name="Casear" value="CAS"> Encryption
+	   			<input type="radio" name="Casear" value="VIG"> Decryption<br>
+				</p>
+					<input type="submit" value="Utwórz klase"/>
+				</form>
+    </div>
+
+</body>
+
+
+
+</head>
+
+
+
+
+</html>
