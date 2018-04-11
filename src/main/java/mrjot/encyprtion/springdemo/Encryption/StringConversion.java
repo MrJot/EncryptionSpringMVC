@@ -45,23 +45,25 @@ public class StringConversion {
 
 
 	public void toLowerCase() {
-		char[] inputArray = this.messageToConvert.toCharArray();
+		char[] inputArray = messageToConvert.toCharArray();
 		for (int i = 0; i < inputArray.length; i++) {
 			if (Character.isUpperCase(inputArray[i])) {
-				this.indexNumberForCapitalizingLetters.add(i);
+				indexNumberForCapitalizingLetters.add(i);
 			}
-			this.processedMessageToCipher[i] = Character.toLowerCase(inputArray[i]);
+			processedMessageToCipher[i] = Character.toLowerCase(inputArray[i]);
 		}
 	}
 	
 	
 	public String toUpperCase(char input[]) {
-		this.indexNumberForCapitalizingLetters.forEach(item->{
+		indexNumberForCapitalizingLetters.forEach(item->{
 			input[item.intValue()]=Character.toUpperCase(input[item.intValue()]);
 			
 		});
 		return new String(input);
 }
+	
+	
 	
 	
 	}
