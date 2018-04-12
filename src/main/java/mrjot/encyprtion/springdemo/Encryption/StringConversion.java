@@ -14,6 +14,7 @@ public class StringConversion {
 		super();
 		this.messageToConvert = messageToConvert;
 		this.processedMessageToCipher=new char[messageToConvert.length()];
+		toLowerCase();
 	}
 
 	//GETTERS AND SETTERS
@@ -52,6 +53,7 @@ public class StringConversion {
 			}
 			processedMessageToCipher[i] = Character.toLowerCase(inputArray[i]);
 		}
+		
 	}
 	
 	
@@ -62,9 +64,4 @@ public class StringConversion {
 		});
 		return new String(input);
 }
-	
-	
-	
-	
-	}
-	
+}
